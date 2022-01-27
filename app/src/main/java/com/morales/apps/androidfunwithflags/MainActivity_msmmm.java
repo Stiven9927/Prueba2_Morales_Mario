@@ -21,19 +21,22 @@ public class MainActivity_msmmm extends AppCompatActivity {
         user = findViewById(R.id.editTextText_User2);
         pass = findViewById(R.id.editTextText_Pass2);
         log = findViewById(R.id.button_acept2);
+    }
 
-        log.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(user.getText().toString().equals("pepe") && pass.getText().toString().equals("pepe")
-                || ser.getText().toString().equals("juan") && pass.getText().toString().equals("juan")){
-                    Intent intent = new Intent(MainActivity_msmmm, )
-                    Toast.makeText(MainActivity_msmmm.this, "Credenciales correctas", Toast.LENGTH_LONG).show();
+    public void onCLickAceptar(View view){
+        user = findViewById(R.id.editTextText_User2);
+        pass = findViewById(R.id.editTextText_Pass2);
+        log = findViewById(R.id.button_acept2);
 
-                }else{
-                    Toast.makeText(MainActivity_msmmm.this, "Credenciales Erroneas", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
+        if(user.getText().toString().equals("pepe") && pass.getText().toString().equals("pepe")
+                || user.getText().toString().equals("juan") && pass.getText().toString().equals("juan")){
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("usuario", username);
+            startActivity(intent);
+            Toast.makeText(MainActivity_msmmm.this, "Credenciales correctas", Toast.LENGTH_LONG).show();
+
+        }else{
+            Toast.makeText(MainActivity_msmmm.this, "Credenciales Erroneas", Toast.LENGTH_LONG).show();
+        }
     }
 }
