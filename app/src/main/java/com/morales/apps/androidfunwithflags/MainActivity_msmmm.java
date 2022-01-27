@@ -1,5 +1,6 @@
 package com.morales.apps.androidfunwithflags;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,9 +27,11 @@ public class MainActivity_msmmm extends AppCompatActivity {
             public void onClick(View view) {
                 if(user.getText().toString().equals("pepe") && pass.getText().toString().equals("pepe")
                 || ser.getText().toString().equals("juan") && pass.getText().toString().equals("juan")){
+                    Intent intent = new Intent(MainActivity_msmmm, )
+                    Toast.makeText(MainActivity_msmmm.this, "Credenciales correctas", Toast.LENGTH_LONG).show();
 
                 }else{
-                    Toast.makeText(MainActivity_msmmm.this, "")
+                    Toast.makeText(MainActivity_msmmm.this, "Credenciales Erroneas", Toast.LENGTH_LONG).show();
                 }
             }
         });
