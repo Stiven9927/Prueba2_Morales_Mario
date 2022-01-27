@@ -1,7 +1,6 @@
-package deitel.com.prueba2_morales_mario;
+package com.morales.apps.main_nuevo_msmm;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
