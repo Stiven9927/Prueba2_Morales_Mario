@@ -67,11 +67,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="24dp"
         android:text=" User1: pepe pepe"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText_Pass" />
+        app:layout_constraintTop_toBottomOf="@+id/button_acept" />
 
     <TextView
         android:id="@+id/textView5"
@@ -82,4 +82,14 @@
         android:text="User2: juan, juan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_acept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="56dp"
+        android:text="Aceptar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_Pass" />
 </android.support.constraint.ConstraintLayout>
