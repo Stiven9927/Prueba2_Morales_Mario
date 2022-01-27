@@ -16,22 +16,21 @@ public class MainActivity_msmmm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.ac);
+        setContentView(R.layout.activity_mainn_msmmm);
 
-        //user = findViewById(R.id);
+        user = findViewById(R.id.editTextText_User2);
         pass = findViewById(R.id.editTextText_Pass2);
         log = findViewById(R.id.button_acept2);
     }
 
     public void onCLickAceptar(View view){
-
+        user = findViewById(R.id.editTextText_User2);
         pass = findViewById(R.id.editTextText_Pass2);
         log = findViewById(R.id.button_acept2);
 
         if(user.getText().toString().equals("pepe") && pass.getText().toString().equals("pepe")
                 || user.getText().toString().equals("juan") && pass.getText().toString().equals("juan")){
             Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("usuario", username);
             startActivity(intent);
             Toast.makeText(MainActivity_msmmm.this, "Credenciales correctas", Toast.LENGTH_LONG).show();
 
