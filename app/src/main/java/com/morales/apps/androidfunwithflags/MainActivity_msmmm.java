@@ -16,15 +16,15 @@ public class MainActivity_msmmm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_msmmm);
+        //setContentView(R.layout.ac);
 
-        user = findViewById(R.id.editTextText_User2);
+        //user = findViewById(R.id);
         pass = findViewById(R.id.editTextText_Pass2);
         log = findViewById(R.id.button_acept2);
     }
 
     public void onCLickAceptar(View view){
-        user = findViewById(R.id.editTextText_User2);
+
         pass = findViewById(R.id.editTextText_Pass2);
         log = findViewById(R.id.button_acept2);
 
