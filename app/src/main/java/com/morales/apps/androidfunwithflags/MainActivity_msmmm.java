@@ -28,6 +28,7 @@ public class MainActivity_msmmm extends AppCompatActivity {
         pass = findViewById(R.id.editTextText_Pass2);
         log = findViewById(R.id.button_acept2);
 
+        //condicion
         if(user.getText().toString().equals("pepe") && pass.getText().toString().equals("pepe")
                 || user.getText().toString().equals("juan") && pass.getText().toString().equals("juan")){
             Intent intent = new Intent(this, MainActivity.class);
